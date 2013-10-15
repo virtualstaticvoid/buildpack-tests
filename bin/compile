@@ -31,9 +31,8 @@ function indent() {
 
 mkdir -p $BUILD_DIR/.profile.d
 
-echo <<ENVARS > $BUILD_DIR/.profile.d/test.sh
-#!/usr/bin/env bash
+echo "#!/usr/bin/env bash
 SOME_VAR=test123
-ENVARS
+" > $BUILD_DIR/.profile.d/test.sh
 
 chmod +x $BUILD_DIR/.profile.d/test.sh
