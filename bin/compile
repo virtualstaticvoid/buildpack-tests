@@ -36,4 +36,4 @@ echo <<ENVARS > $BUILD_DIR/.profile.d/test.sh
 SOME_VAR=test123
 ENVARS
 
-# chmod +x $BUILD_DIR/.profile.d/test.sh
+chmod +x $BUILD_DIR/.profile.d/test.sh
