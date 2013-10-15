@@ -32,7 +32,7 @@ function indent() {
 mkdir -p $BUILD_DIR/.profile.d
 
 echo "#!/usr/bin/env bash
-SOME_VAR=test123
+export SOME_VAR=test123
 " > $BUILD_DIR/.profile.d/test.sh
 
 chmod +x $BUILD_DIR/.profile.d/test.sh
